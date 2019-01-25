@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* BEGIN HEADER */
+header {
+  height: 75px;
+  background-color: #3d3d3d;
+}
+header .logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 31px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #3bcf72;
+}
+header ul {
+  text-align: right;
+  padding: 17.5px 0px;
+  overflow: auto;
+}
+header .nav-element {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+header .nav-element:hover {
+  border-bottom: solid 1px #3bcf72;
+}
+header li:first-child {
+  float: left;
+}
+header a, header a:link, header a:visited, header a:hover, header a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*BEGIN HERO */
+.hero {
+  background-image: url("/images/hero-bg.jpg");
+  height: 350px;
+}
+.hero hgroup {
+  text-transform: uppercase;
+  padding-top: 137px;
+}
+.hero hgroup > h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: white;
+}
+.hero hgroup > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
