@@ -1,22 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  background-color: #ffffff;
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
-}
-
+/*
+    Must Declare following in _variables.scss
+        $primary-color
+        $secondary-color
+        $highlight-color
+        $header-text-color
+        $header-height
+        $logo-font-size
+        $nav-font-size
+        $nav-padding
+*/
 header {
   background-color: #3d3d3d;
   overflow: hidden;
-  min-height: 75px;
 }
 header .logo {
   font-family: "Roboto", sans-serif;
@@ -25,60 +21,37 @@ header .logo {
   display: block;
   text-transform: uppercase;
   color: #3ae374 !important;
-  padding: 20px 0px;
+  padding: 14px 0px;
   float: left;
 }
 header nav {
   text-align: right;
+  cursor: default;
 }
 header .nav-element {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   margin: auto;
   display: inline-block;
   text-transform: uppercase;
-  padding: 27px 20px 10px;
+  padding: 21.5px 20px 10px;
   color: #ffffff !important;
 }
 header .nav-element:hover {
   border-bottom: solid 1px #3ae374;
+  cursor: default;
 }
 header a, header a:link, header a:visited, header a:hover, header a:active {
   text-decoration: none;
   color: inherit;
 }
 
-.hero {
-  background-image: url("/images/hero-bg.jpg");
-  height: 350px;
-}
-.hero hgroup {
-  text-transform: uppercase;
-  padding-top: 137px;
-  padding-left: 20px;
-}
-.hero hgroup h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 45px;
-  color: white;
-}
-.hero hgroup h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: white;
-}
-
 @media only screen and (max-width: 768px) {
-  .container {
-    padding: 0px 20px;
-  }
-
   header .hamburger {
     display: block;
     cursor: pointer;
     float: right;
-    padding: 17.5px 20px 0px 0px;
+    padding: 14px 20px 0px 0px !important;
     right: 0;
     top: 0;
     position: absolute;
@@ -108,19 +81,97 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
   header nav {
     visibility: hidden;
     display: none;
+    background-color: #4b4b4b;
+    width: 100%;
+    left: -20px;
+    padding: 0px 20px 0px;
+    position: relative;
   }
   header nav a {
     float: none;
     display: block !important;
     text-align: left !important;
-    padding: 0px 0px 20px 0px !important;
+    padding: 15px 20px 15px 20px !important;
+    left: -20px;
+    position: relative;
+    width: 100%;
   }
   header nav a:hover {
     border-bottom: solid 0px !important;
+    background-color: #3ae374;
+    color: #3d3d3d !important;
   }
   header nav.visible {
     visibility: visible !important;
     display: block;
+  }
+}
+.hero {
+  background-color: #4b4b4b;
+  background-image: url("/images/hero-bg.jpg");
+  height: 350px;
+}
+.hero hgroup {
+  text-transform: uppercase;
+  padding-top: 133.5px;
+}
+.hero hgroup h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  color: white;
+}
+.hero hgroup h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+
+/*
+    Must Declare following in _variables.scss
+        $primary-color
+        $footer-height
+        $footer-text-color
+        $footer-font-size
+*/
+footer {
+  background-color: #3d3d3d;
+  color: #acacac;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 46.5px 0px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.hero {
+  margin-top: 65px;
+}
+
+section:not(.hero) {
+  height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 20px;
   }
 }
 
