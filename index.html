@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Responsive Web Design Test" />
     <meta name="author" content="Auth" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Sarmiento | Responsive Web Design Test</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
 </head>
@@ -12,14 +13,17 @@
 <body>
     <header>
         <div class="container">
+            <a class="logo" href="/">mcrscrmnt</a>
+            <div class="hamburger" onclick="toggleNavigation(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
             <nav>
-                <ul>
-                    <li class="logo"><a href="/">mcrscrmnt</a></li>
-                    <li class="nav-element"><a>Home</a></li>
-                    <li class="nav-element"><a>Contact</a></li>
-                    <li class="nav-element"><a>Portfolio</a></li>
-                    <li class="nav-element"><a>About</a></li>
-                </ul>
+                <a class="nav-element">Home</a>
+                <a class="nav-element">Contact</a>
+                <a class="nav-element">Portfolio</a>
+                <a class="nav-element">About</a>
             </nav>
         </div>
     </header>
@@ -31,6 +35,14 @@
             <h2>Short description</h2>
         </hgroup>
     </section>
+
+    <script>
+        function toggleNavigation(x) {
+            console.log("clicked")
+            x.classList.toggle("change")
+            document.getElementsByTagName('nav')[0].classList.toggle('visible')
+        }
+    </script>
 </body>
 
 </html>
