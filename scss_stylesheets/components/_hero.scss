@@ -1,0 +1,26 @@
+@import '../variables';
+
+.hero{
+    background-color: $hero-color;
+    background-image: $hero-img-url;
+    height: $hero-height;
+
+    hgroup{
+        text-transform: uppercase;
+        padding-top: ($hero-height - ($hero-h1-font-size + $hero-h2-font-size + 18))/2;
+
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: $hero-h1-font-size;
+            color: white;
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: $hero-h2-font-size;
+            color: white;
+        }
+    }
+    
+}

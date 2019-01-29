@@ -1,0 +1,123 @@
+@import '../variables';
+
+/*
+    Must Declare following in _variables.scss
+        $primary-color
+        $secondary-color
+        $highlight-color
+        $header-text-color
+        $header-height
+        $logo-font-size
+        $nav-font-size
+        $nav-padding
+*/
+
+header{
+    background-color: $primary-color;
+    overflow: hidden;
+
+    .logo{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: $logo-font-size;
+        display: block;
+        text-transform: uppercase;
+        color: $highlight-color !important;
+        padding: ($header-height - $logo-font-size + 9)/2 0px;
+        float: left;
+    }
+    nav {
+        text-align: right;
+        cursor: default;
+    }
+    .nav-element{
+        font-family: 'Roboto', sans-serif;
+        font-size: $nav-font-size;
+        margin: auto;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: ($header-height - $nav-font-size + 9)/2 $nav-padding 10px;
+        color: $header-text-color !important;
+
+        &:hover{
+            border-bottom: solid 1px $highlight-color;
+            cursor: default;
+        }
+    }
+    a, a:link, a:visited, a:hover, a:active{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        .hamburger{
+            display: block;
+            cursor: pointer;
+            float: right;
+    
+            padding: ($header-height - $logo-font-size + 9)/2 20px 0px 0px !important;
+            right: 0;
+            top: 0;
+            position: absolute;
+    
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+            &.change{
+                .bar1 {
+                    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+                    transform: rotate(-45deg) translate(-9px, 6px) ;
+                } 
+                .bar2 {
+                    opacity: 0;
+                }
+                .bar3 {
+                    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+                    transform: rotate(45deg) translate(-8px, -8px) ;
+                }
+            }
+        }
+    
+        .logo{
+            float: none;
+            padding-left: 0px;
+        }
+
+        nav{
+            visibility: hidden;
+            display: none;
+            background-color: $secondary-color;
+            width: 100%;
+            left: -$nav-padding;
+            padding: 0px 20px 0px;
+            position: relative;
+
+            a{
+                float: none;
+                display: block !important;
+                text-align: left !important;
+                padding: 15px $nav-padding 15px $nav-padding !important;
+                left: -$nav-padding;
+                position: relative;
+                width: 100%;
+                
+                &:hover{
+                    border-bottom: solid 0px !important;
+                    background-color: $highlight-color;
+                    color: $primary-color !important;
+                }
+            }
+            &.visible{
+                visibility: visible !important;
+                display: block;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,17 @@
+/*
+    Must Declare following in _variables.scss
+        $primary-color
+        $footer-height
+        $footer-text-color
+        $footer-font-size
+*/
+
+footer{
+    background-color: $primary-color;
+    color: $footer-text-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: $footer-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    padding: ($footer-height - $footer-font-size + 9)/2 0px;
+}
