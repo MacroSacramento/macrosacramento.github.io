@@ -1,22 +1,24 @@
 $primary-color: #3d3d3d;
 $secondary-color: #4b4b4b;
+$primary-font: 'Roboto', sans-serif;
 $highlight-color: #3ae374;
+$text-shadow: 0px 0px 2px black;
 
 //_responsiveNav.scss
 $header-text-color: #ffffff;
-$header-height: 50px /*+15*/;
+$header-height: 40px /*+15*/;
 $logo-font-size: 31px;
 $nav-font-size: 16px;
-$nav-padding:20px;
+$nav-padding: 20px;
 
 //hero.scss
 $hero-color: $secondary-color;
-$hero-height: 350px;
+$hero-height: 300px;
 $hero-h1-font-size: 45px;
 $hero-h2-font-size: 20px;
 $hero-img-url: url('/images/hero-bg.jpg');
 
 //footer.scss
-$footer-height: 100px;
+$footer-height: 70px;
 $footer-font-size: 16px;
 $footer-text-color: #acacac;

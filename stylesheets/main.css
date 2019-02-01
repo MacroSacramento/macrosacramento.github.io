@@ -13,6 +13,8 @@
 header {
   background-color: #3d3d3d;
   overflow: hidden;
+  box-shadow: 0px 1px 2px 0px;
+  text-shadow: 0px 0px 3px black;
 }
 header .logo {
   font-family: "Roboto", sans-serif;
@@ -21,23 +23,24 @@ header .logo {
   display: block;
   text-transform: uppercase;
   color: #3ae374 !important;
-  padding: 14px 0px;
+  padding: 9px 0px;
   float: left;
 }
 header nav {
   text-align: right;
   cursor: default;
 }
-header .nav-element {
+header nav .nav-element {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: auto;
   display: inline-block;
   text-transform: uppercase;
-  padding: 21.5px 20px 10px;
+  padding: 16.5px 20px 10px;
   color: #ffffff !important;
+  text-shadow: 0px 0px 2px black;
 }
-header .nav-element:hover {
+header nav .nav-element:hover {
   border-bottom: solid 1px #3ae374;
   cursor: default;
 }
@@ -51,7 +54,7 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
     display: block;
     cursor: pointer;
     float: right;
-    padding: 14px 20px 0px 0px !important;
+    padding: 9px 20px 0px 0px !important;
     right: 0;
     top: 0;
     position: absolute;
@@ -62,6 +65,7 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
+    box-shadow: 0px 0px 4px 0px;
   }
   header .hamburger.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -83,20 +87,17 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
     display: none;
     background-color: #4b4b4b;
     width: 100%;
-    left: -20px;
-    padding: 0px 20px 0px;
     position: relative;
   }
-  header nav a {
+  header nav .nav-element {
+    text-shadow: none;
     float: none;
     display: block !important;
     text-align: left !important;
-    padding: 15px 20px 15px 20px !important;
-    left: -20px;
     position: relative;
     width: 100%;
   }
-  header nav a:hover {
+  header nav .nav-element:hover {
     border-bottom: solid 0px !important;
     background-color: #3ae374;
     color: #3d3d3d !important;
@@ -109,11 +110,13 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
 .hero {
   background-color: #4b4b4b;
   background-image: url("/images/hero-bg.jpg");
-  height: 350px;
+  height: 300px;
+  box-shadow: 0px 1px 5px 0px;
 }
 .hero hgroup {
   text-transform: uppercase;
-  padding-top: 133.5px;
+  padding-top: 85px;
+  text-shadow: 0px 0px 2px black;
 }
 .hero hgroup h1 {
   font-family: "Roboto", sans-serif;
@@ -142,10 +145,71 @@ footer {
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
-  padding: 46.5px 0px;
+  padding: 31.5px 0px;
+}
+
+.row .col-1 {
+  width: 8.33%;
+}
+.row .col-2 {
+  width: 16.66%;
+}
+.row .col-3 {
+  width: 25%;
+}
+.row .col-4 {
+  width: 33.33%;
+}
+.row .col-5 {
+  width: 41.66%;
+}
+.row .col-6 {
+  width: 50%;
+}
+.row .col-7 {
+  width: 58.33%;
+}
+.row .col-8 {
+  width: 66.66%;
+}
+.row .col-9 {
+  width: 75%;
+}
+.row .col-10 {
+  width: 83.33%;
+}
+.row .col-11 {
+  width: 91.66%;
+}
+.row .col-12 {
+  width: 100%;
+}
+.row [class*=col-] {
+  float: left;
+  padding: 15px;
+  height: 100%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media only screen and (max-width: 768px) {
+  .row [class*=col-] {
+    width: 100%;
+  }
+}
+
+.card {
+  font-family: "Roboto", "Roboto", sans-serif;
+  height: 100%;
+  padding: 20px;
+  color: #3d3d3d;
+  box-shadow: 0px 0px 3px 0px;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
@@ -162,16 +226,13 @@ header {
 }
 
 .hero {
-  margin-top: 65px;
-}
-
-section:not(.hero) {
-  height: 400px;
+  margin-top: 55px;
 }
 
 @media only screen and (max-width: 768px) {
-  .container {
+  .container :not(nav) {
     padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

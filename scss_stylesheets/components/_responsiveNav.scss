@@ -15,6 +15,8 @@
 header{
     background-color: $primary-color;
     overflow: hidden;
+    box-shadow: 0px 1px 2px 0px;
+    text-shadow: 0px 0px 3px black;
 
     .logo{
         font-family: 'Roboto', sans-serif;
@@ -29,21 +31,23 @@ header{
     nav {
         text-align: right;
         cursor: default;
-    }
-    .nav-element{
-        font-family: 'Roboto', sans-serif;
-        font-size: $nav-font-size;
-        margin: auto;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: ($header-height - $nav-font-size + 9)/2 $nav-padding 10px;
-        color: $header-text-color !important;
 
-        &:hover{
-            border-bottom: solid 1px $highlight-color;
-            cursor: default;
+        .nav-element{
+            font-family: 'Roboto', sans-serif;
+            font-size: $nav-font-size;
+            margin: auto;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: ($header-height - $nav-font-size + 9)/2 $nav-padding 10px;
+            color: $header-text-color !important;
+            text-shadow: $text-shadow;
+    
+            &:hover{
+                border-bottom: solid 1px $highlight-color;
+                cursor: default;
+            }
         }
-    }
+    }  
     a, a:link, a:visited, a:hover, a:active{
         text-decoration: none;
         color: inherit;
@@ -68,6 +72,7 @@ header{
                 background-color: white;
                 margin: 6px 0;
                 transition: 0.4s;
+                box-shadow: 0px 0px 4px 0px;
             }
             &.change{
                 .bar1 {
@@ -89,35 +94,33 @@ header{
             padding-left: 0px;
         }
 
+        
         nav{
             visibility: hidden;
             display: none;
             background-color: $secondary-color;
             width: 100%;
-            left: -$nav-padding;
-            padding: 0px 20px 0px;
             position: relative;
 
-            a{
+            .nav-element{
+                text-shadow: none;
                 float: none;
                 display: block !important;
                 text-align: left !important;
-                padding: 15px $nav-padding 15px $nav-padding !important;
-                left: -$nav-padding;
                 position: relative;
                 width: 100%;
-                
+                    
                 &:hover{
                     border-bottom: solid 0px !important;
                     background-color: $highlight-color;
                     color: $primary-color !important;
                 }
             }
+
             &.visible{
                 visibility: visible !important;
                 display: block;
             }
         }
     }
-    
 }
