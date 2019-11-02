@@ -1,0 +1,9 @@
+@media screen and (min-width: 600px){
+    main{
+        grid-gap: 2vh;
+    }
+    [class^="light-"]{
+        height: 12vh;
+        width: 12vh;
+    }
+}

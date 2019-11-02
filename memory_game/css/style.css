@@ -1,0 +1,31 @@
+main{
+    margin: 0 auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 2vw;
+    width: 100%;
+}
+[class^="light-"]{
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 15vw;
+    width: 15vw;
+}
+
+#start-button{
+    grid-column: 3/3;
+}
+
+#score-cont{
+    grid-column: 3/6;
+}
+
+.blink{
+    background-color: gold;
+}
+
+.lit{
+    background-color: maroon;
+}
