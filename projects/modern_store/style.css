@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+  line-height: 1;
+  float: left;
+}
+.nav-item {
+  font-size: 0.85rem;
+}
+.navbar-brand {
+  letter-spacing: 0.3em;
+  font-size: 1.5rem;
+}
+.cart span {
+  text-align: center;
+  padding: 0.3rem 0.6rem;
+}
+.cart span:not(:first-child){
+  border-left: 1px solid rgba(16, 16, 16, 0.5);
+}
+.cart:hover{
+  cursor: pointer;
+}
+.card-columns {
+  column-count: 2;
+}

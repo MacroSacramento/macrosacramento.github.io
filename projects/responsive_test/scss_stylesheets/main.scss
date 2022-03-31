@@ -5,14 +5,24 @@
 @import './components/footer';
 @import "./components/columnLayout";
 @import "./components/card";
+@import "./components/icons";
 
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
+    &:before, &:after {
+        box-sizing: border-box;
+    }
+}
+html{
+    height: 100%;
+    position: relative;
 }
 .container{
     max-width: 960px;
+    min-height: 100%;
     margin: auto;
 }
 header{
@@ -20,14 +30,17 @@ header{
     top: 0;
     width: 100%;
 }
-.hero{
+body{
     margin-top: $header-height + 6;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 @media only screen and (max-width: 768px) {
     .container {
-        :not(nav){
+        :not(nav) {
             padding-left: 20px;
             padding-right: 20px;
-        } 
+        }
     }    
 }

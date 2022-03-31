@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Responsive Web Design Test" />
+    <meta name="author" content="Auth" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Template</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="/">mcrscrmnt</a>
+            <div class="hamburger" onclick="toggleNavigation(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <nav>
+                <a class="nav-element" href="/" onclick="">Home</a>
+                <a class="nav-element" href="/contact.html" onclick="">Contact</a>
+                <a class="nav-element" onclick="">Portfolio</a>
+                <a class="nav-element" onclick="">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="herobg"></div>
+        <hgroup class="container">
+            <h1>Improve Your Business</h1>
+            <h2>web development solutions</h2>
+        </hgroup>
+    </section>
+
+    <br />
+
+    <div class="container">
+        <section class="row">
+            <div class="col-4">
+                <article class="card">
+                    <div class="ico-container"><span class="icon icon-mac"></span></div>
+                    <br />
+                    <h1 style="text-align:center;">Desktop Friendly</h1>
+                    <br />
+                    <p>
+                        Ipsum dolor sit amet, te est erat vocent, te dicant maluisset temporibus pri, has id veri
+                        argumentum. Id per primis possim vulputate. Ut quot doctus mentitum duo, iudico exerci tritani
+                        cum
+                        no, aeque soleat conclusionemque id his. Cibo error consulatu nec ea, pri ad solum velit
+                        nusquam.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-4">
+                <article class="card">
+                    <div class="ico-container"><span class="icon icon-phone"></span></div>
+                    <br />
+                    <h1 style="text-align: center;">Mobile Optimized</h1>
+                    <br />
+                    <p>
+                        Adversarium neglegentur usu no, mel ad movet aperiri, debet omnium aperiam ut eos. Cum at
+                        sint labore tincidunt, qui et error aeque. Et usu causae oportere. Id facete vocent sit, est
+                        quem
+                        insolens an.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-4">
+                <article class="card">
+                    <div class="ico-container"><span class="icon icon-server"></span></div>
+                    <br />
+                    <h1 style="text-align: center;">
+                        Remote Hosting
+                    </h1>
+                    <br />
+                    <p>
+                        Sumo fugit dignissim, ut vim inani populo inimicus, mei malorum convenire
+                        consetetur eu. Per at alii causae, cu graece luptatum ius. In doming adipisci has, quo ne vide
+                        legere molestiae. Dico discere et usu, mel dicant oblique ea. Duo te falli aeterno postulant.
+                        Placerat vituperatoribus ea per, ut audiam perfecto patrioque sea. Posse facete praesent sea
+                        in, te
+                        nusquam dissentiet nec, explicari efficiantur deterruisset nec at.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; footer
+            <br />
+            <br />
+            <div class="icon-credit">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNavigation(x) {
+            console.log("clicked")
+            x.classList.toggle("change")
+            document.getElementsByTagName('nav')[0].classList.toggle('visible')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+@import "../variables";
+
+$icon-size: 100px;
+$padding: 20px;
+
+.icon{
+    display: block;
+    background-repeat: no-repeat;
+    height: $icon-size;
+    width: $icon-size;
+    margin: auto;
+
+    &.icon-mac{
+        background-image: url("../images/mac.svg");
+    }
+    &.icon-phone{
+        background-image: url("../images/phone.svg");
+    }
+    &.icon-server{
+        background-image: url("../images/server.svg");
+    }
+}

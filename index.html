@@ -1,70 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Responsive Web Design Test" />
-    <meta name="author" content="Auth" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design Template</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <title>Marco Sarmiento | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a class="logo" href="/">mcrscrmnt</a>
-            <div class="hamburger" onclick="toggleNavigation(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <nav>
-                <a class="nav-element">Home</a>
-                <a class="nav-element">Contact</a>
-                <a class="nav-element">Portfolio</a>
-                <a class="nav-element">About</a>
-            </nav>
+    <nav class="navbar navbar-expand navbar-dark sticky-top ">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand text-secondary mr-auto">
+                <h3>&lt;/></h3>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="./assets/MarcoSarmiento_SoftwareEngineer_Resume.pdf"
+                        class="nav-link rounded-btn">Resume</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section class="hero">
-        <div class="herobg"></div>
-        <hgroup class="container">
-            <h1>Tag Line Here</h1>
-            <h2>Short description</h2>
-        </hgroup>
+    <section class="container d-flex fill-screen" id="home">
+        <div class="h-100 row">
+            <div class="col-lg-6 align-self-center">
+                <p class="greeting">Hello I am,</p>
+                <h1>Marco Sarmiento</h1>
+                <h3>a Software Engineer and Student</h3>
+                <p>I believe in constant learning and self improvement. I'm always looking to hone my skills and grow as
+                    a person. I'm motivated, committed and a valuable asset to your team.</p>
+                    <br>
+                <a class="rounded-btn" href="https://github.com/MacroSacramento">See me on GitHub</a>
+                <a class="rounded-btn" href="https://www.linkedin.com/in/macrosacramento/">See me on LinkedIn</a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block align-self-center">
+                <div class="terminal">
+                    <ul class="terminal-icons m-0">
+                        <li class="close"></li>
+                        <li class="min"></li>
+                        <li class="max"></li>
+                    </ul>
+                    <p class="terminal-text">> Hello World</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <br />
+    <section class="container d-flex" id="projects">
+        <div class="align-self-center">
+            <h1>Here are some of the cool things I've built:</h1>
+            <hr>
+            <article class="project row d-flex align-items-center">
+                <div class="project-description col-lg-6">
+                    <h2>OpenRMS</h2>
+                    <hr>
+                    <p>Open Restaurant Management Software (OpenRMS) is just that, a Restaurant Management Platform that
+                        is designed to be run on just about any system. Built using the MERN stack, it uses APIs to
+                        communicate to the front and back end and allows for the management of multiple Restaurants and
+                        Employees with many features planned for development. Future features include but are not
+                        limited to a Kitchen Display System and a Point-of-Sale system to streamline everything using
+                        one product without having to rely on different vendors.</p>
+                    <br>
+                    <a href="https://github.com/MacroSacramento/OpenRMS" class="rounded-btn">See on GitHub</a>
+                </div>
+                <div class="project-image col-lg-6">
+                    <img src="https://github.com/MacroSacramento/OpenRMS/raw/master/assets/screenshot.png" alt="">
+                </div>
+            </article>
 
-    <div class="container">
-        <section class="row">
-            <div class="col-4">
-                <article class="card">Quisque dapibus eu enim sit amet cursus. Donec vitae mauris at libero laoreet fermentum. Phasellus sodales erat id vehicula venenatis. Maecenas commodo et diam a ullamcorper. Vivamus a tempus sem, feugiat auctor libero. Vivamus faucibus viverra nisi et pulvinar. Aliquam eu ipsum a sem maximus dignissim in at magna. Nulla metus nulla, condimentum quis pellentesque eu, dignissim ac nibh. Nulla tempor ultricies dictum. Mauris luctus dignissim fringilla. Maecenas et vulputate risus. Curabitur tempor id risus a scelerisque. Aliquam erat volutpat.</article>
-            </div>
-            <div class="col-4">
-                <article class="card">Curabitur lobortis blandit mauris, at consectetur odio luctus sit amet. Curabitur et nisi sit amet turpis mattis rhoncus. Morbi eget commodo eros, et lobortis ante. Nullam libero nisi, cursus id finibus quis, fermentum eget tortor. Sed auctor tempor ante dignissim pharetra. Cras sollicitudin odio tincidunt accumsan elementum. Proin scelerisque, lacus eu pharetra molestie, ipsum elit mattis enim, nec molestie sapien arcu id massa. Cras consequat purus ac ante feugiat semper. Praesent malesuada molestie sapien, et blandit metus tincidunt auctor. Nulla molestie justo ipsum, placerat dictum nisl consectetur ut. Sed dignissim tempor fermentum. Sed gravida nibh id purus hendrerit, sit amet pharetra quam elementum. Nullam tempor et nibh non aliquam. Etiam feugiat vel augue at tempus.</article>
-            </div>
-            <div class="col-4">
-                <article class="card">Curabitur in tortor a enim tempus molestie. Curabitur nec urna vitae metus vestibulum tempus eget vitae nunc. Etiam ut ornare leo. Phasellus tristique lorem finibus urna tempus, a accumsan lorem commodo. Etiam hendrerit tempor nibh, ut bibendum nunc fermentum ut. Curabitur ultrices purus at mattis posuere. Suspendisse potenti. </article>
-            </div>
-        </section>
-    </div>
+            <article class="project row d-flex align-items-center">
+                <div class="project-description col-lg-6">
+                    <h2>Stylish</h2>
+                    <hr>
+                    <p>Award winning submission for the 2015-2016 Future Business Leaders of America Mobile Application
+                        Development Competition that received 1st place at the regional level, 4th at the state level
+                        and competed nationally in Atlanta, Georgia. The app was built using Meteor on Ubuntu Linux with
+                        Microsoft’s Visual Studio Code IDE and Google’s Android Studio build tools.</p>
+                    <br>
+                    <a href="https://github.com/TollesonDreamTeam/Stylish" class="rounded-btn">See on GitHub</a>
+                </div>
+                <div class="project-image col-lg-6">
+                    <img src="./assets/stylish.png" alt="">
+                </div>
+            </article>
 
-    <br />
+            <article class="project row d-flex align-items-center">
+                <div class="project-description col-lg-6">
+                    <h2>Tolleson Union High School District Mobile Application</h2>
+                    <hr>
+                    <p>Award winning submission for the 2014-2015 Future Business Leaders of American Mobile Application
+                        Development competition that placed 1st at the regional level and 6th at the state level. It is
+                        written entirely in HTML and Javascript using JQuery and exported to an app using cordova. This
+                        iteration features a rewritten UI and it's own template system.</p>
+                    <br>
+                    <a href="https://github.com/MacroSacramento/TollesonMobileApp-v2" class="rounded-btn">See on
+                        GitHub</a>
+                </div>
+                <div class="project-image col-lg-6">
+                    <img src="./assets/tuhsd.png" alt="">
+                </div>
+            </article>
 
-    <footer>
-        &copy; footer
-    </footer>
+            <article class="project row d-flex align-items-center">
+                <div class="project-description col-lg-6">
+                    <h2>Smoothie-rpg</h2>
+                    <hr>
+                    <p>Demo of a procedurally generated dungeon crawler featuring custom assets. Built in Phaser game
+                        engine in Javascript with Electron. </p>
+                    <br>
+                    <a href="https://github.com/TeamSmoothie/smoothie-rpg" class="rounded-btn">See on GitHub</a>
+                </div>
+                <div class="project-image col-lg-6">
+                    <img src="./assets/rpg.png" alt="">
+                </div>
+            </article>
+
+            <article class="pt-5">
+                <h2 class="text-center">See some of my Designs: </h2>
+                <hr>
+                <div class="row pt-3 text-center">
+                    <div class="col-md-4">
+                        <h4>Modern Store</h4>
+                        <img src="./assets/modern_store.png" alt="">
+                        <br><br>
+                        <a href="./projects/modern_store/" class="rounded-btn">See Preview</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Start up</h4>
+                        <img src="./assets/smoothie.png" alt="">
+                        <br><br>
+                        <a href="./projects/smoothie/" class="rounded-btn">See Preview</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Responsive Test</h4>
+                        <img src="./assets/test.png" alt="">
+                        <br><br>
+                        <a href="./projects/responsive_test/" class="rounded-btn">See Preview</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
 
     <script>
-        function toggleNavigation(x) {
-            console.log("clicked")
-            x.classList.toggle("change")
-            document.getElementsByTagName('nav')[0].classList.toggle('visible')
+        const time = new Date(1, 1, 2021, 11).getHours()
+        console.log(12 <= time && time < 17)
+        let greeting = ""
+        if (0 <= time && time < 12) {
+            greeting = "Morning"
+        } else if (12 <= time && time < 17) {
+            greeting = "Afternoon"
+        } else {
+            greeting = "Evening"
         }
+        document.querySelector('.greeting').innerHTML = `Good ${greeting} my name is,`
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

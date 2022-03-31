@@ -7,6 +7,7 @@
 */
 
 footer{
+    width: 100%;
     background-color: $primary-color;
     color: $footer-text-color;
     font-family: 'Roboto', sans-serif;
@@ -14,4 +15,15 @@ footer{
     text-align: center;
     text-transform: uppercase;
     padding: ($footer-height - $footer-font-size + 9)/2 0px;
+    margin-top: auto;
+
+    .icon-credit{
+        text-transform: none;
+    }
+
+    a, a:link, a:visited, a:hover, a:active{
+        text-decoration: underline;
+        color: inherit;
+        padding: 0px;
+    }
 }

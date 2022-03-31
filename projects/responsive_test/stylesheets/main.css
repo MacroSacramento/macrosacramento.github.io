@@ -13,8 +13,7 @@
 header {
   background-color: #3d3d3d;
   overflow: hidden;
-  box-shadow: 0px 1px 2px 0px;
-  text-shadow: 0px 0px 6px #4b4b4b;
+  box-shadow: 0px 0px 6px 0px;
 }
 header .logo {
   font-family: "Roboto", sans-serif;
@@ -97,7 +96,7 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
     position: relative;
     width: 100%;
   }
-  header nav .nav-element:hover {
+  header nav .nav-element:hover, header nav .nav-element :active {
     border-bottom: solid 0px !important;
     background-color: #3ae374;
     color: #3d3d3d !important;
@@ -115,7 +114,7 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
 }
 .hero hgroup {
   text-transform: uppercase;
-  padding-top: 85px;
+  padding-top: 117.5px;
   text-shadow: 0px 0px 2px black;
 }
 .hero hgroup h1 {
@@ -139,6 +138,7 @@ header a, header a:link, header a:visited, header a:hover, header a:active {
         $footer-font-size
 */
 footer {
+  width: 100%;
   background-color: #3d3d3d;
   color: #acacac;
   font-family: "Roboto", sans-serif;
@@ -146,6 +146,15 @@ footer {
   text-align: center;
   text-transform: uppercase;
   padding: 31.5px 0px;
+  margin-top: auto;
+}
+footer .icon-credit {
+  text-transform: none;
+}
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active {
+  text-decoration: underline;
+  color: inherit;
+  padding: 0px;
 }
 
 .row .col-1 {
@@ -200,12 +209,43 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+  .row .col-4 {
+    height: inherit;
+  }
+
+  .card {
+    flex: 1;
+  }
+}
 .card {
   font-family: "Roboto", "Roboto", sans-serif;
   height: 100%;
+  width: 100%;
   padding: 20px;
   color: #3d3d3d;
   box-shadow: 0px 0px 3px 0px;
+  line-height: 24px;
+}
+
+.icon {
+  display: block;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+.icon.icon-mac {
+  background-image: url("../images/mac.svg");
+}
+.icon.icon-phone {
+  background-image: url("../images/phone.svg");
+}
+.icon.icon-server {
+  background-image: url("../images/server.svg");
 }
 
 * {
@@ -213,9 +253,18 @@ footer {
   margin: 0px;
   padding: 0px;
 }
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  position: relative;
+}
 
 .container {
   max-width: 960px;
+  min-height: 100%;
   margin: auto;
 }
 
@@ -225,8 +274,11 @@ header {
   width: 100%;
 }
 
-.hero {
+body {
   margin-top: 75px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {
