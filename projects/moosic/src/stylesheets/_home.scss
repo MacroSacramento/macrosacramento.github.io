@@ -1,0 +1,66 @@
+#home {
+    overflow-x: hidden;
+    display: grid;
+
+    @media screen and (max-width: 1149px) {
+        padding-top: .25rem;
+        padding-bottom: 10rem;
+        display: grid;
+        max-width: 100%;
+        scroll-margin-top: 10rem;
+        grid-row: 1;
+
+        .text-container {
+            justify-content: center;
+            display: grid;
+            margin-top: 1rem;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 4rem;
+            line-height: 4rem;
+            margin: 0px 0px 0px -3px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 1.5rem;
+            text-align: justify;
+        }
+
+        p {
+            padding-top: 1rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    @media screen and (min-width: 1150px) {
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 20px;
+        grid-column: span 12;
+        height: calc(100vh - 4.5rem);
+        scroll-margin-top: 5rem;
+
+        .text-container {
+            grid-column: 7/12;
+            padding-top: calc((50vh - 4.5rem) / 2);
+
+            h1 {
+                font-size: 8rem;
+                line-height: 4.5rem;
+                margin-left: -5px;
+                margin-bottom: 0px;
+            }
+            h2 {
+                font-size: 4.5rem;
+            }
+            p {
+                margin-top: 1rem;
+                margin-left: .25rem;
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+}

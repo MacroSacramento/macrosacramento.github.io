@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOSIC</title>
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="navbar-nav container">
+            <img src="./assets/SVG/logo.svg" alt="Moosic Logo" class="nav-logo logo-lg" />
+            <img src="./assets/SVG/logo_small.svg" alt="Moosic Logo" class="nav-logo logo-sm" />
+            <img src="./assets/SVG/menu-icon.svg" alt="Menu Icon" class="nav-button" />
+            <ul class="nav-menu">
+                <li class="nav-item nav-item-active">
+                    <a href="#home" class="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#playlist">Playlist</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <article id="home">
+            <div class="album">
+                <img src="./assets/images/moosic_by_moosic.png" alt="MOOSIC by MOOSIC Album Cover">
+            </div>
+            <div class="text-container">
+                <h1>MOOSIC</h1>
+                <h2>by MOOSIC</h2>
+                <p>New Self-Titled album coming
+                    soon. Check out the Samples for a
+                    preview before release.</p>
+            </div>
+        </article>
+
+        <article id="playlist">
+            <div class="album">
+                <img src="./assets/images/moosic_by_moosic.png" alt="MOOSIC by MOOSIC Album Cover">
+            </div>
+            <h1 class="album-title">MOOSIC</h1>
+            <p class="album-info"><span class="song-count">3</span> <b>Songs</b> <span class="album-length">2hrs</span>
+            </p>
+            <div class="playlist">
+                <div class="song">
+                    <p class="title">Title</p>
+                    <p class="time">Duration</p>
+                </div>
+                <div class="song">
+                    <p class="title">Thinking About You</p>
+                    <p class="time">3:20</p>
+                </div>
+                <div class="song unavailable">
+                    <p class="title">You don’t really love me</p>
+                    <p class="time">3:50</p>
+                </div>
+                <div class="song unavailable">
+                    <p class="title">So done with you</p>
+                    <p class="time">4:23</p>
+                </div>
+                <div class="song unavailable">
+                    <p class="title">I actually still love you</p>
+                    <p class="time">3:57</p>
+                </div>
+                <div class="song unavailable">
+                    <p class="title">Call me back please</p>
+                    <p class="time">4:08</p>
+                </div>
+                <div class="song unavailable">
+                    <p class="title">Bye baby bye</p>
+                    <p class="time">3:15</p>
+                </div>
+                <div class="song unavailable">
+                    <p class="title">We together</p>
+                    <p class="time">3:46</p>
+                </div>
+                <div class="song unavailable">
+                    <p class="title">Together Forever</p>
+                    <p class="time">4:05</p>
+                </div>
+            </div>
+        </article>
+
+        <div class="media-player text-container">
+            <audio class="media"></audio>
+            <img class="btn-play" src="./assets/SVG/icon-play.svg" alt="Play Button">
+            <input type="range" class="media-time" min="0" max="0" step="0">
+            <p class="time-playing">0:00</p>
+            <p class="song-name">Thinking About You</p>
+            <p class="time-duration">0:00</p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <form>
+            <h1>Contact</h1>
+            <input type="text" class="form-fname" placeholder="First Name">
+            <input type="text" class="form-lname" placeholder="Last Name">
+            <input type="text" class="form-email" placeholder="Email">
+            <textarea type="text" class="form-comment" placeholder="Comments" rows="8"></textarea>
+            <button disabled="disabled">
+                Submit
+            </button>
+        </form>
+        <div class="socials">
+            <div class="social-icons">
+                <img src="./assets/SVG/social-icon-twitter.svg" alt="">
+                <img src="./assets/SVG/social-icon-ig.svg" alt="">
+                <img src="./assets/SVG/social-icon-fb.svg" alt="">
+                <img src="./assets/SVG/social-icon-yt.svg" alt="">
+            </div>
+            <div class="album">
+                <img src="./assets/images/moosic_by_moosic.png" alt="MOOSIC by MOOSIC Album Cover">
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

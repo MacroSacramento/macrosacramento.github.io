@@ -1,0 +1,139 @@
+.media-player {
+    display: grid;
+    position: sticky;
+    background-color: $background-color;
+    bottom: 0px;
+    padding: 1rem 2rem !important;
+    height: 8rem;
+
+    .btn-play {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .time-duration,
+    .time-playing,
+    .song-name {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .song-name {
+        text-align: center;
+    }
+
+    .time-duration {
+        text-align: end;
+    }
+
+    @media screen and (min-width: 1150px) {
+        grid-column-start: 7;
+        grid-column-end: 13;
+        margin-bottom: 5rem !important;
+    }
+
+    input[type=range] {
+        background-color: $background-color;
+        height: 25px;
+        -webkit-appearance: none;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    input[type=range]:focus {
+        outline: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 5px;
+        cursor: pointer;
+        animate: 0.2s;
+        box-shadow: 0px 0px 0px #000000;
+        background: #333333;
+        border-radius: 1px;
+        border: 1px solid #1F1F1F;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        box-shadow: 0px 0px 0px #000000;
+        border: 1px solid #1F1F1F;
+        height: 18px;
+        width: 18px;
+        border-radius: 25px;
+        background: #333333;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -7.5px;
+    }
+
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #333333;
+    }
+
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 5px;
+        cursor: pointer;
+        animate: 0.2s;
+        box-shadow: 0px 0px 0px #000000;
+        background: #333333;
+        border-radius: 1px;
+        border: 1px solid #1F1F1F;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        box-shadow: 0px 0px 0px #000000;
+        border: 1px solid #1F1F1F;
+        height: 18px;
+        width: 18px;
+        border-radius: 25px;
+        background: #333333;
+        cursor: pointer;
+    }
+
+    input[type=range]::-ms-track {
+        width: 100%;
+        height: 5px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+
+    input[type=range]::-ms-fill-lower {
+        background: #333333;
+        border: 1px solid #1F1F1F;
+        border-radius: 2px;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    input[type=range]::-ms-fill-upper {
+        background: #333333;
+        border: 1px solid #1F1F1F;
+        border-radius: 2px;
+        box-shadow: 0px 0px 0px #000000;
+    }
+
+    input[type=range]::-ms-thumb {
+        margin-top: 1px;
+        box-shadow: 0px 0px 0px #000000;
+        border: 1px solid #1F1F1F;
+        height: 18px;
+        width: 18px;
+        border-radius: 25px;
+        background: #333333;
+        cursor: pointer;
+    }
+
+    input[type=range]:focus::-ms-fill-lower {
+        background: #333333;
+    }
+
+    input[type=range]:focus::-ms-fill-upper {
+        background: #333333;
+    }
+
+}

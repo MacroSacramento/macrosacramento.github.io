@@ -1,0 +1,12 @@
+$background-color: #87877d;
+$text-color: #333333;
+
+@font-face {
+    font-family: Raleway_Italic;
+    src: url('../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+
+@mixin vertical-center {
+    justify-self: center;
+    align-self: center;
+}
